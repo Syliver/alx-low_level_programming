@@ -1,5 +1,5 @@
-#include <main.h>
-
+#include "main.h"
+#include <unistd.h>
 /**
  * main function
  * Return: 0 (success)
@@ -7,9 +7,7 @@
 
 int main (void)
 {
-	int x;
-
-	write('_putchar \n');
+	write(1, "_putchar" '\n');
 	
 	return (0);
 }
