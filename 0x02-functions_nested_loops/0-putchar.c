@@ -7,7 +7,9 @@
 
 int main (void)
 {
-	printf("_putchar\n");
+	int x;
+
+	write('_putchar \n');
 	
 	return (0);
 }
