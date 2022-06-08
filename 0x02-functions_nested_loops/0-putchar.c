@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -6,17 +6,7 @@
  * Return: 0 (success)
  */
 
-int main (void)
+int _putchar(char _putchar)
 {
-	char x;
-
-	for(x=0; x <= 2; x++)
-	{
-		putchar(x);
-
-		putchar('\n');
-
-		return (0);
-	}
-	
+	return (write(1, &_putchar,1));	
 }
