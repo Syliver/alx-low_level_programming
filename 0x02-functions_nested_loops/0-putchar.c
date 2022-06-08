@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,7 +8,13 @@
 
 int main (void)
 {
-	write(1, "_putchar" '\n');
+	char x;
+
+	for(x=0; x <= 2; x++)
+	{
+		putchar(x);
+
+		return (0);
+	}
 	
-	return (0);
 }
