@@ -5,14 +5,9 @@
  * Return: 0 (success)
  */
 
-int main()
+int _putchar(char c)
 {
-	char c = "_putchar";
-
-	putchar(c);
-
-	putchar('\n');
-
-	return (0);
+	c = '_putchar';
+	return (write(1, &c, 1));
 }
 
